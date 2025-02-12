@@ -3,7 +3,7 @@
 This repository is dedicated to the programs I wrote for several common topics
 on data structures and algorithms. I used Java primarily for this.
 
-This project's source code is available under the [`src`](./src) directory.
+This project's source code is in the [`src`](./src) directory.
 Please feel free to make any changes to my code.
 
 ## Coding Environment
