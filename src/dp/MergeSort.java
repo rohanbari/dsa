@@ -108,7 +108,6 @@ public class MergeSort {
         new MergeSort().mergeSort(arrays[1]);
         new MergeSort().mergeSort(arrays[2]);
 
-        System.out.println();
         System.out.println(Arrays.toString(arrays[0]));
         System.out.println(Arrays.toString(arrays[1]));
         System.out.println(Arrays.toString(arrays[2]));
