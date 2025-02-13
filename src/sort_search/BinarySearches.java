@@ -14,7 +14,7 @@
  limitations under the License.
  */
 
-package dp;
+package sort_search;
 
 public class BinarySearches {
 
