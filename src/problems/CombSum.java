@@ -21,7 +21,14 @@ import java.util.List;
 
 public class CombSum {
 
-    List<List<Integer>> combinationSum(int[] candidates, int target) {
+    /**
+     * Generates all possible UNIQUE combinations that sums to `target`.
+     * 
+     * @param candidates An array of candidates
+     * @param target     Target sum
+     * @return Possible sum combinations
+     */
+    private List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         dfs(candidates, target, result, new ArrayList<>(), 0);
 
@@ -30,6 +37,7 @@ public class CombSum {
 
     private void dfs(int[] candidates, int target, List<List<Integer>> result,
             ArrayList<Integer> temp, int idx) {
+        // Base case
         if (target < 0) {
             return;
         } else if (target == 0) {
@@ -39,8 +47,8 @@ public class CombSum {
 
         for (int i = idx; i < candidates.length; i++) {
             temp.add(candidates[i]);
-            dfs(candidates, target - candidates[i], result, temp, i);
-            temp.remove(temp.size() - 1);
+            dfs(candidates, target - candidates[i], result, temp, i); // DFS
+            temp.remove(temp.size() - 1); // Backtrack
         }
     }
 

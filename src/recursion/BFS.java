@@ -21,20 +21,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-/**
- * TODO: Add comments to this [file] and [CombSum.java] as well
- */
 public class BFS {
-
-    private static void addEdge(List<List<Integer>> adj, int u, int v) {
-        adj.get(u).add(v);
-        adj.get(v).add(u);
-    }
 
     private static void bfs(List<List<Integer>> adj, int target) {
         boolean[] visited = new boolean[adj.size()];
         Queue<Integer> queue = new LinkedList<>();
 
+        // Base case
         visited[target] = true;
         queue.add(target);
 
@@ -42,13 +35,21 @@ public class BFS {
             int curr = queue.poll();
             System.out.println(String.format("Visiting %d", curr));
 
+            // Iterative approach
             for (int x : adj.get(curr)) {
+                // If the element is not visited, then visit it and add it to
+                // the queue to be processed iteratively.
                 if (!visited[x]) {
                     visited[x] = true;
                     queue.add(x);
                 }
             }
         }
+    }
+
+    private static void addEdge(List<List<Integer>> adj, int u, int v) {
+        adj.get(u).add(v);
+        adj.get(v).add(u);
     }
 
     public static void main(String[] args) {
