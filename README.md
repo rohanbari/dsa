@@ -1,7 +1,8 @@
 # DSA
 
 This repository is dedicated to the programs I wrote for several common topics
-on data structures and algorithms. I used Java primarily for this.
+on data structures and algorithms. I used Java primarily for this. Alongside,
+I also attempt some questions from LeetCode.
 
 This project's source code is in the [`src`](./src) directory.
 Please feel free to make any changes to my code.
