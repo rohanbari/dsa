@@ -18,7 +18,7 @@ package problems;
 
 public class SearchIn2D {
 
-    public boolean searchMatrix(int[][] matrix, int target) {
+    private boolean searchMatrix(int[][] matrix, int target) {
         boolean isPresent = false;
 
         for (int i = 0; i < matrix.length; i++) {

@@ -28,7 +28,7 @@ public class WordPattern {
      * @param s       The text sequence
      * @return Is bijection?
      */
-    public boolean wordPattern(String pattern, String s) {
+    private boolean wordPattern(String pattern, String s) {
         String[] words = s.split(" ");
 
         if (pattern.length() != words.length) {

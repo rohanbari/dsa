@@ -31,7 +31,7 @@ public class SymmIntegers {
      * @param high Upper bound
      * @return No. of symmetric integers
      */
-    public int countSymmetricIntegers(int low, int high) {
+    private int countSymmetricIntegers(int low, int high) {
         int count = 0;
 
         for (int num = low; num <= high; num++) {

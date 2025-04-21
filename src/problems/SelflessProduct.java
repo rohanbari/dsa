@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelflessProduct {
 
-    public int[] productExceptSelf(int[] nums) {
+    private int[] productExceptSelf(int[] nums) {
         final int N = nums.length;
 
         int[] prefixProducts = new int[N];
